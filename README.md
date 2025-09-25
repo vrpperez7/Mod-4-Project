@@ -28,6 +28,9 @@
 **Policy & Ethics Advisor:**
 - Avoiding decisions that disadvantage specific times/areas.
 
+</br>
+</br>
+
 ### So we ask the question: 
 
 ## How can we best ensure the safety, efficiency, and profits for our bikes?
