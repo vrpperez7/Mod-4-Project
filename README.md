@@ -12,17 +12,20 @@
 
 ## The stakeholders are:
 
-### <ins>Primary Stakeholder's</ins> interests </br>:
+### <ins>Primary Stakeholder's interests:</ins>
 ***Park General Manager*** would like to know:
 - When/where demand is strong or fragile.
 - User behavior patterns.
 - Which hypotheses to prioritize next quarter.
 
-### <ins>Supporting Stakeholders'</ins> interests</br>
+### <ins>Supporting Stakeholders' interests</ins></br>
 **Operations Lead:**
 - Low-impact maintenance windows
+
 **Marketing Lead:**
+
 - Promo timing
 - Segments of casual rider vs registered
+
 **Policy & Ethics Advisor:**
 - 
