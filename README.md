@@ -29,7 +29,6 @@
 - Avoiding decisions that disadvantage specific times/areas.
 
 </br>
-</br>
 
 ### So we ask the question: 
 
