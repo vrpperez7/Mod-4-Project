@@ -52,14 +52,13 @@ This means the subset represents Monday through Friday without holidays. I chose
 
 I plotted our data to find strends in the hourly usage of bikes:</br>
 
-
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/cbb06758-c8e7-4cf5-ad0d-4491dcb6439a" />
 
 After plotting, I noticed our data presented a bimodal distribution. This mean there are two distinct peaks, indicating our bike rides occur more frequently.</br>
 
 I did more **feature engineering** to pinpoint these hours, creating a "timebin" column that put all hours with a mean within the 80th quantile (275) to the "Peak Hours" category, hours above 100 and less than 275 to the "Not Peak" category, and anything less than 100 in the "Maintenance" category.</br>
 
-
-and found the top four hours were:
+and found the top two hours for morning and evening were:
 
 The morning hours of 7 and 8, </br>
 The evening hours of 17 and 18.
