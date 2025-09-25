@@ -39,4 +39,4 @@
 - **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible.
 
 I chose to subset the data to work with "workingday" column where "workingday" is 1. </br>
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on our Park General's goal, and highlights potential profitable times for our Marketing Lead.
+This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
