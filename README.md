@@ -32,7 +32,7 @@
 
 ### So we ask the question: 
 
-## How can we best ensure the safety, efficiency, and profits for our bikes?
+## How can we best ensure the safety, efficiency, and profitability for our bikes?
 
 <ins>Data Cleaning and Processing<ins> </br>
 
@@ -40,5 +40,11 @@
 - Changed the **Data Type** for dteday column to datetime
 - **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible.
 
+<img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
+
 I chose to subset the data to work with "workingday" column where "workingday" is 1. </br>
+
+<img width="784" height="522" alt="image" src="https://github.com/user-attachments/assets/8515c9fe-428c-41ba-938b-467d3b24cf61" />
+
+
 This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
