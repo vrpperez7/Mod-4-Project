@@ -1,5 +1,4 @@
 # Bike Share Analysis
-
 ### by [Vincent Perez](https://www.linkedin.com/in/thevinceperez/)
 
 ## Table of Contents
@@ -23,12 +22,20 @@
 - Low-impact maintenance windows.
 
 **Marketing Lead:**
-- Promo timing.
+- Best timing for promos.
 - Segments of casual rider vs registered.
 
 **Policy & Ethics Advisor:**
-- Avoiding decisions that disadvantage specific times/areas
+- Avoiding decisions that disadvantage specific times/areas.
 
 ### So we ask the question: 
 
-## How can we best ensure the safety, efficiency, and profits for our bikes during work days?
+## How can we best ensure the safety, efficiency, and profits for our bikes?
+
+<ins>Data Cleaning and Processing<ins> </br>
+
+- Used the .info() method to ensure all columns had no **Missing Values**,
+- Changed the **Data Type** for dteday column to datetime
+- **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible.
+
+I chose to subset the data to work with "workingday" column where "workingday" is 1. This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on our Park General's goal, and highlights potential profitable times for our Marketing Lead.
