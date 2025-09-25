@@ -47,3 +47,19 @@ I chose to subset the data to work with "workingday" column where "workingday" i
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
 This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
+
+<ins>Exploratory Data Analysis<ins>
+
+I plotted our data to find strends in the hourly usage of bikes:</br>
+
+
+
+After plotting, I noticed our data presented a bimodal distribution. This mean there are two distinct peaks, indicating our bike rides occur more frequently.</br>
+
+I did more **feature engineering** to pinpoint these hours, creating a "timebin" column that put all hours with a mean within the 80th quantile (275) to the "Peak Hours" category, hours above 100 and less than 275 to the "Not Peak" category, and anything less than 100 in the "Maintenance" category.</br>
+
+
+and found the top four hours were:
+
+The morning hours of 7 and 8, </br>
+The evening hours of 17 and 18.
