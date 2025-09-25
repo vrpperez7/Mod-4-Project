@@ -44,7 +44,8 @@
 
 I chose to subset the data to work with "workingday" column where "workingday" is 1. </br>
 
-<img width="384" height="322" alt="image" src="https://github.com/user-attachments/assets/8515c9fe-428c-41ba-938b-467d3b24cf61" />
+<img width="384" height="322" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
+
 
 
 This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
