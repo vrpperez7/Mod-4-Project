@@ -14,18 +14,21 @@
 
 ### <ins>Primary Stakeholder's interests:</ins>
 ***Park General Manager*** would like to know:
-- When/where demand is strong or fragile.
+- When demand is strong or fragile.
 - User behavior patterns.
 - Which hypotheses to prioritize next quarter.
 
-### <ins>Supporting Stakeholders' interests</ins></br>
+### <ins>Supporting Stakeholders' interests:</ins></br>
 **Operations Lead:**
-- Low-impact maintenance windows
+- Low-impact maintenance windows.
 
 **Marketing Lead:**
-
-- Promo timing
-- Segments of casual rider vs registered
+- Promo timing.
+- Segments of casual rider vs registered.
 
 **Policy & Ethics Advisor:**
-- 
+- Avoiding decisions that disadvantage specific times/areas
+
+### So we ask the question: 
+
+## How can we best ensure the safety, efficiency, and profits for our bikes during work days?
