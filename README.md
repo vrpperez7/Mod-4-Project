@@ -38,7 +38,7 @@
 
 - Used the .info() method to ensure all columns had no **Missing Values**,
 - Changed the **Data Type** for dteday column to datetime
-- **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible.
+- **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible for future safety recommendaitons.
 
 <img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
 
