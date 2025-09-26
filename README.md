@@ -30,9 +30,8 @@
 
 </br>
 
-### So we ask the question: 
-
-## How can we best ensure the safety, efficiency, and profitability for our bikes?
+## So we ask the question: 
+# How can we best ensure the safety, efficiency, and profitability for our bikes?
 
 ### <ins>Data Cleaning and Processing<ins> </br>
 
