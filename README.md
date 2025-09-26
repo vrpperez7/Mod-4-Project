@@ -69,4 +69,10 @@ These categories included
 and found the top two hours for morning and evening were:
 
 The morning hours of 7 and 8, </br>
-The evening hours of 17 and 18.
+The evening hours of 17 and 18. </br>
+
+Our line graph also answers our **Operations Lead** question as best maintenance hours are between hours 23-5. </br>
+
+I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
+
+## Insights and Recommendaitons
