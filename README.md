@@ -74,4 +74,14 @@ Our line graph also answers our **Operations Lead** question as best maintenance
 
 I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
-## Insights and Recommendaitons
+# Insights and Recommendations
+
+To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's totals of bike riders. </br>
+
+Morning Peak Seasonal Totals:
+
+![bar chart for morning peak seasons](figures/morningseasonality.png)
+
+Evening Seasonal Totals:
+
+![bar chart for evening peak seasons](figures/eveningseasonality.png)
