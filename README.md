@@ -51,7 +51,7 @@ This means the subset represents Monday through Friday without holidays. I chose
 
 I plotted our data on a line graph to find strends in the hourly usage of bikes:</br>
 
-[line graph](figures/linegraph.png)
+![line graph](figures/linegraph.png)
 
 After plotting, I noticed our data presented a bimodal distribution. This mean there are two distinct peaks, indicating our bike rides occur more frequently.</br>
 
