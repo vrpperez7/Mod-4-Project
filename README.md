@@ -87,11 +87,11 @@ I decide to further analyze our morning and peak hours to answer more stakeholde
 
 To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's totals of bike riders. </br>
 
-Morning Peak Seasonal Totals:
+### Morning Peak Seasonal Totals:
 
 ![bar chart for morning peak seasons](figures/morningseasonality.png)
 
-Evening Seasonal Totals:
+### Evening Seasonal Totals:
 
 ![bar chart for evening peak seasons](figures/eveningseasonality.png)
 
@@ -108,10 +108,12 @@ Recommendations:
 
 Using the data's "registered" and "casual" columns, we can find the composition of bike riders during peak hours. This will allow us to understand the user base, for more promotional offers.
 
-Morning Peak Composition: </br>
+### Morning Peak Composition: </br>
+
 ![pie chart for morning composition](figures/morningpie.png)
 
-Evening Peak Composition: </br>
+### Evening Peak Composition: </br>
+
 ![pie chart for evening composition](figures/eveningpie.png)
 
 Insights:
@@ -124,10 +126,12 @@ Recommendations:
 ## Safety Concern
 Knowing the frequency of rides occuring during peak hours, I looked further into windspeed during these peak hours to and compared to count of rides see if theres a potential feature that supports safety.
 
-Morning Histogram: </br>
+### Morning Histogram: </br>
+
 ![morning histogram of frequency of rides vs windspeed](figures/morninghist.png)
 
-Evening Histogram: </br>
+### Evening Histogram: </br>
+
 ![evening histogram of frequency of rides vs windspeed](figures/eveninghist.png)
 
 Insights:
