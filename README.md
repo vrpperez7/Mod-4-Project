@@ -100,6 +100,7 @@ Insights:
 - The seasonal bar chart for peak data supports our general data line graph with evenings having more bike counts than morning
 - Summer is by far the most popular time for bike riding, making it the best season for any promotional offers
 - Morning and Evening differ with second-best season, as morning's second best season is fall and evening's is spring.
+- Winter has the least sum of bike counts
 
 Recommendations:
 - Create marketing opportunities during the summer season, as more riders occur during this season.
