@@ -123,3 +123,19 @@ Insights:
 
 Recommendations:
 - Although our registered amount is large, still shows opportunity to leverage our understanding of casual users, as we know evening hours compose of more.
+
+## Safety Concern
+Knowing the frequency of rides occuring during peak hours, I looked further into windspeed during these peak hours to and compared to count of rides see if theres a potential feature that supports safety.
+
+Morning Histogram:
+![morning histogram of frequency of rides vs windspeed](figures/morninghist.png)
+
+Evening Histogram:
+![evening histogram of frequency of rides vs windspeed](figures/eveninghist.png)
+
+Insights:
+- Most bike riders ride around 0-20 windspeeds.
+- Windspeeds can trend to above 30 for both morning and evening (could be dangerous weather conditions of not alarmed)
+
+Recommendations:
+- Create software that warns users of windspeeds when windspeeds go about 30 to prevent bike accidents due to debris or uncomfortable conditions.
