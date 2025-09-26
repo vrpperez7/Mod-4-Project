@@ -64,7 +64,7 @@ These categories included
 - Not Peak: mean hours less than 275 and above 100
 - Maintenance: anything below 100
 
-<img width="243" height="669" alt="Screenshot 2025-09-26 at 3 29 07 PM" src="https://github.com/user-attachments/assets/36ccbaf0-757a-43af-baab-1dcb120d3279" />
+<img width="243" height="469" alt="Screenshot 2025-09-26 at 3 29 07 PM" src="https://github.com/user-attachments/assets/36ccbaf0-757a-43af-baab-1dcb120d3279" />
 
 and found the top two hours for morning and evening were:
 
