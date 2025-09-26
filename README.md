@@ -101,10 +101,10 @@ Recommendations:
 
 Using the data's "registered" and "casual" columns, we can find the composition of bike riders during peak hours. This will allow us to understand the user base, for more promotional offers.
 
-Morning Peak Composition:
+Morning Peak Composition: </br>
 ![pie chart for morning composition](figures/morningpie.png)
 
-Evening Peak Composition:
+Evening Peak Composition: </br>
 ![pie chart for evening composition](figures/eveningpie.png)
 
 Insights:
