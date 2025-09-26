@@ -76,6 +76,8 @@ I decide to further analyze our morning and peak hours to answer more stakeholde
 
 # Insights and Recommendations
 
+## Seasonality
+
 To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's totals of bike riders. </br>
 
 Morning Peak Seasonal Totals:
@@ -94,3 +96,20 @@ Insights:
 Recommendations:
 - Create marketing opportunities during the summer season, as more riders occur during this season.
 - When creating secondary marketing opportunities, focus on time of day as both times of day present different opportunities for best marketing strategies.
+
+## User Composition
+
+Using the data's "registered" and "casual" columns, we can find the composition of bike riders during peak hours. This will allow us to understand the user base, for more promotional offers.
+
+Morning Peak Composition:
+![pie chart for morning composition](figures/morningpie.png)
+
+Evening Peak Composition:
+![pie chart for evening composition](figures/eveningpie.png)
+
+Insights:
+- most of our customers during both time periods are registered
+- evening has a larger percentile of casual users
+
+Recommendations:
+- Although our registered amount is large, still shows opportunity to leverage our understanding of casual users, as we know evening hours compose of more.
