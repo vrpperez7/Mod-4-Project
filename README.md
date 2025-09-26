@@ -3,7 +3,17 @@
 
 ## Table of Contents
 
+- [Business Problem & Stakeholders](#business-problem)
+- [Database Info](#the-database-and-schema)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Feature Engineering](#FEATURE-ENGINEERING)
+- [Operations Director Analysis & Visuals](#analysis-for-operations-director)
+- [Marketing Director Analysis & Visuals](#analysis-for-marketing-director)
+- [Final Recommendations](#final-recommendations-for-next-quarter)
+- [Ethics and Biases](#ethics-and-biases)
+- [Repo Navigation](#repo-navigation)
 
+![image](https://github.com/user-attachments/assets/2daef8b4-6de6-4dd8-8d54-07fc3221c934)
 
 # Business Problem:
 
