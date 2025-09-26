@@ -14,7 +14,8 @@
 
 # Business Problem:
 
-### I am a data analyst on the BikeShare Product team. Our stakeholders have given me the job to extract insights from hourly usage data. They'd like me to give a general overview of the business and how to best support the company.
+### The characteristics of bike share data make it interesting for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
+### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked me to extract insights from the hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
 
 ## The stakeholders are:
 
