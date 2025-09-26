@@ -34,7 +34,7 @@
 
 ## How can we best ensure the safety, efficiency, and profitability for our bikes?
 
-<ins>Data Cleaning and Processing<ins> </br>
+### <ins>Data Cleaning and Processing<ins> </br>
 
 - Used the .info() method to ensure all columns had no **Missing Values**,
 - Changed the **Data Type** for dteday column to datetime
@@ -48,7 +48,7 @@ I chose to subset the data to work with "workingday" column where "workingday" i
 
 This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
 
-<ins>Exploratory Data Analysis<ins>
+### <ins>Exploratory Data Analysis<ins>
 
 I plotted our data to find strends in the hourly usage of bikes:</br>
 
