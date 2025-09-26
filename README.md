@@ -31,37 +31,37 @@
 
 **Marketing Lead:**
 - Best timing for promos.
-- Segments of casual rider vs registered.
+- Breakdown of Casual vs Registered riders.
 
 **Policy & Ethics Advisor:**
 - Avoiding decisions that disadvantage specific times/areas.
 
 </br>
 
-## So we ask the question: 
+## So we start the analysis asking the question: 
 # How can we best ensure the safety, efficiency, and profitability for our bikes?
 
 ### <ins>Data Cleaning and Processing<ins> </br>
 
-- Used the .info() method to ensure all columns had no **Missing Values**,
-- Changed the **Data Type** for dteday column to datetime
-- **Feature Engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeeds more legible for future safety recommendaitons.
+- Used the .info() method to ensure all columns had no **missing values**,
+- Changed the **data type** for "dteday" column to datetime
+- **Feature engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeed more legible for future safety recommendations.
 
 <img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
 
-I chose to subset the data to work with "workingday" column where "workingday" is 1. </br>
+I chose to subset the data to work with "workingday" column where "workingday" is equal to 1. </br>
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lays within, focusing on stronger demand, and highlights potential profitable hours.
+This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lies, focusing on stronger demand, and highlights potential profitable hours.
 
 ### <ins>Exploratory Data Analysis<ins>
 
-I plotted our data on a line graph to find strends in the hourly usage of bikes:</br>
+I plotted our data on a line graph to find trends in the hourly usage of bikes:</br>
 
 ![line graph](figures/linegraph.png)
 
-After plotting, I noticed our data presented a bimodal distribution. This mean there are two distinct peaks, indicating our bike rides occur more frequently.</br>
+After plotting, I noticed our data presented a bimodal distribution. This means there are two distinct peaks, indicating our bike rides occur more frequently.</br>
 
 I did more **feature engineering** to pinpoint these hours. </br>
 
@@ -75,10 +75,10 @@ These categories included
 
 and found the top two hours for morning and evening were:
 
-The morning hours of 7 and 8, </br>
-The evening hours of 17 and 18. </br>
+This means morning hours are 7 and 8, </br>
+Evening hours are 17 and 18. </br>
 
-Our line graph also answers our **Operations Lead** question as best maintenance hours are between hours 23-5, as they have a grouped average count of bike riders less than 81 an hour. </br>
+Our line graph also answers our **Operations Lead's** question as the best maintenance hours are between hours 23-5, as they have a grouped average count of bike riders less than 81 rides an hour. </br>
 
 I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
@@ -86,7 +86,7 @@ I decide to further analyze our morning and peak hours to answer more stakeholde
 
 ## Seasonality
 
-To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's totals of bike riders. </br>
+To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's total number of bike riders. </br>
 
 ### Morning Peak Seasonal Totals:
 
@@ -99,7 +99,7 @@ To direct any type of marketing, I decided to look for any seasonal trends betwe
 Insights:
 - The seasonal bar chart for peak data supports our general data line graph with evenings having more bike counts than morning
 - Summer is by far the most popular time for bike riding, making it the best season for any promotional offers
-- Morning and Evening differ with second best season, as morning's second best season is fall and evening's is spring.
+- Morning and Evening differ with second-best season, as morning's second best season is fall and evening's is spring.
 
 Recommendations:
 - Create marketing opportunities during the summer season, as more riders occur during this season.
@@ -107,7 +107,7 @@ Recommendations:
 
 ## User Composition
 
-Using the data's "registered" and "casual" columns, we can find the composition of bike riders during peak hours. This will allow us to understand the user base, for more promotional offers.
+Using the data's "registered" and "casual" columns, we can find the composition of bike riders during peak hours. This will allow us to understand the user base for more promotional offers.
 
 ### Morning Peak Composition: </br>
 
@@ -118,14 +118,14 @@ Using the data's "registered" and "casual" columns, we can find the composition 
 ![pie chart for evening composition](figures/eveningpie.png)
 
 Insights:
-- most of our customers during both time periods are registered
-- evening has a larger percentile of casual users
+- Most of our customers during both time periods are registered
+- Evening has a larger percentile of casual users
 
 Recommendations:
-- Although our registered amount is large, still shows opportunity to leverage our understanding of casual users, as we know evening hours compose of more.
+- Although our registered amount is large, still shows opportunity to leverage our understanding of casual users, as we know evening hours compose of more casual users.
 
 ## Safety Concern
-Knowing the frequency of rides occuring during peak hours, I looked further into windspeed during these peak hours to and compared to count of rides see if theres a potential feature that supports safety.
+Knowing that ride frequency is highest during peak hours, I looked more closely at wind speeds during those times and compared them to ride counts to see if there's a potential safety-related pattern.
 
 ### Morning Histogram: </br>
 
@@ -136,8 +136,8 @@ Knowing the frequency of rides occuring during peak hours, I looked further into
 ![evening histogram of frequency of rides vs windspeed](figures/eveninghist.png)
 
 Insights:
-- Most bike riders ride around 0-20 windspeeds.
-- Windspeeds can trend to above 30 for both morning and evening (could be dangerous weather conditions of not alarmed)
+- Most bike riders occur when windspeeds are between 0-20.
+- Wind speeds can rise above 30 in both the morning and evening, which could signal potentially dangerous conditions (dangers of debris, reduced control, or discomfort).
 
 Recommendations:
-- Create software that warns users of windspeeds when windspeeds go about 30 to prevent bike accidents due to debris or uncomfortable conditions.
+- Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
