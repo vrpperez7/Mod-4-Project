@@ -127,10 +127,10 @@ Recommendations:
 ## Safety Concern
 Knowing the frequency of rides occuring during peak hours, I looked further into windspeed during these peak hours to and compared to count of rides see if theres a potential feature that supports safety.
 
-Morning Histogram:
+Morning Histogram: </br>
 ![morning histogram of frequency of rides vs windspeed](figures/morninghist.png)
 
-Evening Histogram:
+Evening Histogram: </br>
 ![evening histogram of frequency of rides vs windspeed](figures/eveninghist.png)
 
 Insights:
