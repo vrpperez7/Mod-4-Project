@@ -56,7 +56,15 @@ I plotted our data to find strends in the hourly usage of bikes:</br>
 
 After plotting, I noticed our data presented a bimodal distribution. This mean there are two distinct peaks, indicating our bike rides occur more frequently.</br>
 
-I did more **feature engineering** to pinpoint these hours, creating a "timebin" column that put all hours with a mean within the 80th quantile (275) to the "Peak Hours" category, hours above 100 and less than 275 to the "Not Peak" category, and anything less than 100 in the "Maintenance" category.</br>
+I did more **feature engineering** to pinpoint these hours. </br>
+
+Grouping all hours and creating a "timebin" column, I was able to categorize the means of all hours. </br>
+These categories included
+- Peak Hours: all mean hours on or above the 80th quantile (275)
+- Not Peak: mean hours less than 275 and above 100
+- Maintenance: anything below 100
+
+<img width="243" height="669" alt="Screenshot 2025-09-26 at 3 29 07 PM" src="https://github.com/user-attachments/assets/36ccbaf0-757a-43af-baab-1dcb120d3279" />
 
 and found the top two hours for morning and evening were:
 
