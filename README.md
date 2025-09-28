@@ -12,7 +12,7 @@
 
 ![image](https://github.com/user-attachments/assets/2daef8b4-6de6-4dd8-8d54-07fc3221c934)
 
-# :thinking: Business Problem:
+# :thinking: <ins>Business Problem:<ins/>
 
 ### The characteristics of bike share data make it interesting for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
 ### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked me to extract insights from the hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
@@ -41,7 +41,7 @@
 ## So we start the analysis asking the question: 
 # How can we best ensure the safety, efficiency, and profitability for our bikes?
 
-## :broom: <ins>Data Cleaning and Processing<ins> </br>
+# :broom: <ins>Data Cleaning and Processing<ins/> </br>
 
 - Used the .info() method to ensure all columns had no **missing values**,
 - Changed the **data type** for "dteday" column to datetime
@@ -65,7 +65,7 @@ Our **p-value** was calculated at 0.000042, concluding a *statistical significan
 
 I was able to reject the Null Hypothesis with a power of 98% justifying the difference in means is not only substantial, but a **real finding**.
 
-## <ins>Exploratory Data Analysis<ins>
+## Exploratory Data Analysis
 
 To visualize the mean of working-days, I plotted the data on a line graph and found trends in the hourly usage of bikes:</br>
 
@@ -92,7 +92,7 @@ Our line graph also answers our **Operations Lead's** as it highlights the best 
 
 I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
-# :bulb: Insights and Recommendations
+# :bulb: <ins>Insights and Recommendations<ins/>
 
 ## Seasonality
 
