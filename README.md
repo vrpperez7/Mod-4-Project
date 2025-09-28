@@ -12,24 +12,24 @@
 
 ![image](https://github.com/user-attachments/assets/2daef8b4-6de6-4dd8-8d54-07fc3221c934)
 
-# :thinking: <ins>Business Problem:<ins/>
+# :thinking: <ins>Business Problem:</ins>
 
 ### The characteristics of bike share data make it interesting for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
-### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked me to extract insights from the hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
+### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked us to extract insights from hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
 
 ## The stakeholders are:
 
 ### <ins>Primary Stakeholder's interests:</ins>
-***Park General Manager*** would like to know:
+***The Park General Manager*** would like to know:
 - When demand is strong or fragile.
 - User behavior patterns.
 - Which hypotheses to prioritize next quarter.
 
-### <ins>Supporting Stakeholders' interests:</ins></br>
+### <ins>Supporting Stakeholders' interests:</ins>
 **Operations Lead:**
 - Low-impact maintenance windows.
 
-**Marketing Lead:**
+**Marketing Lead's priorities:**
 - Best timing for promos.
 - Breakdown of Casual vs Registered riders.
 
@@ -39,25 +39,25 @@
 </br>
 
 ## So we start the analysis asking the question: 
-# How can we best ensure the safety, efficiency, and profitability for our bikes?
+# How can we best ensure the safety, efficiency, and profitability of our bikes?
 
 # :broom: <ins>Data Cleaning and Processing<ins/> </br>
 
 - Used the .info() method to ensure all columns had no **missing values**,
-- Changed the **data type** for "dteday" column to datetime
+- Changed the **data type** of the "dteday" column to datetime
 - **Feature engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeed more legible for future safety recommendations.
 
 <img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
 
 ## Filtering the Data
 
-I chose to subset the data to work with "workingday" column where "workingday" is equal to 1. </br>
+I chose to subset the data using the "workingday" column where "workingday" is equal to 1. </br>
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lies, focusing on stronger demand, and highlights potential profitable hours. </br>
+This means the subset represents Monday through Friday without holidays. I chose this sample because it's where the bulk of the data lies, focusing on stronger demand, and highlights potential profitable hours. </br>
 
-To further support this decision, I performed a Welches' T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
+To further support this decision, I performed a Welchs' T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
 
 ```
 # Do average hourly rides differ between working days and non-working days?
@@ -86,7 +86,7 @@ To visualize the mean of working-days, I plotted the data on a line graph and fo
 
 ![line graph](figures/linegraph.png)
 
-I noticed our data presented a bimodal distribution. This means there are two distinct peaks, indicating our bike rides occur more frequently during specific time periods.</br>
+I noticed that the data presented a bimodal distribution. This means there are two distinct peaks, indicating our bike rides occur more frequently during specific time periods.</br>
 
 I did more **feature engineering** to pinpoint the time periods. </br>
 
@@ -100,8 +100,7 @@ These categories included
 
 I found the top two hours fell within:
 
-the morning hours of 7 and 8, </br>
-the evening hours are 17 and 18. </br>
+the morning hours of 7 and 8, and the evening hours are 17 and 18. </br>
 
 Our line graph also answers our **Operations Lead's** as it highlights the best maintenance hours. These fell between the hours 23-5, as they have a grouped average count of bike riders less than 81 rides an hour. </br>
 
@@ -111,7 +110,7 @@ I decide to further analyze our morning and peak hours to answer more stakeholde
 
 ## Seasonality
 
-To direct any type of marketing, I decided to look for any seasonal trends between morning and evening hours by comparing each season's total number of bike riders. </br>
+To guide marketing decisions, I decided to analyze seasonal trends between morning and evening hours by comparing each season's total number of bike riders. </br>
 
 ### Morning Peak Seasonal Totals:
 
@@ -123,9 +122,9 @@ To direct any type of marketing, I decided to look for any seasonal trends betwe
 
 Insights:
 - The seasonal bar chart for peak data supports our general data line graph with evenings having more bike counts than morning
-- Summer is by far the most popular time for bike riding, making it the best season for any promotional offers
-- Morning and Evening differ with second-best season, as morning's second best season is fall and evening's is spring.
-- Winter has the least sum of bike counts
+- Summer is by far the most popular time for bike riding, making it the best season for promotional offers
+- Morning and Evening differ in their second-best seasons: for mornings, its fall; for evenings, it's spring.
+- Winter has the least sum of bike riders.
 
 Recommendations:
 - Create marketing opportunities during the summer season, as more riders occur during this season.
@@ -148,10 +147,10 @@ Insights:
 - Evening has a larger percentile of casual users
 
 Recommendations:
-- Although our registered amount is large, still shows opportunity to leverage our understanding of casual users, as we know evening hours compose of more casual users.
+- Although the number of registered users is large, there is still an opportunity to leverage our understanding of casual users, as we know evening hours compose of more casual users.
 
 ## Safety Concern
-Knowing that ride frequency is highest during peak hours, I looked more closely at wind speeds during those times and compared them to ride counts to see if there's a potential safety-related pattern.
+Knowing that ride frequency is highest during peak hours, I examined wind speeds during those times and compared them to ride counts to see if there's a potential safety-related concerns.
 
 ### Morning Histogram: </br>
 
@@ -163,7 +162,7 @@ Knowing that ride frequency is highest during peak hours, I looked more closely 
 
 Insights:
 - Most bike riders occur when windspeeds are between 0-20.
-- Wind speeds can rise above 30 in both the morning and evening, which could signal potentially dangerous conditions (dangers of debris, reduced control, or discomfort).
+- Wind speeds can exceed above 30 in both the morning and evening, potentially indicating dangerous conditions suchh as debris, reduced control, or discomfort.
 
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
