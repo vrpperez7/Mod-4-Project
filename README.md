@@ -162,8 +162,8 @@ Knowing that ride frequency is highest during peak hours, I examined wind speeds
 ![evening histogram of frequency of rides vs windspeed](figures/eveninghist.png)
 
 Insights:
-- Most bike riders occur when windspeeds are between 0-20.
-- Wind speeds can exceed 30 in both the morning and evening, potentially indicating dangerous conditions such as debris, reduced control, or discomfort.
+- Most bike riders occur when windspeeds are between 0-20 mph.
+- Wind speeds can exceed 30 mph in both the morning and evening, potentially indicating dangerous conditions such as debris, reduced control, or discomfort.
 
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
@@ -181,7 +181,7 @@ Tailoring the findings of our analysis to each stakeholder,
  - Summertime is the best time for promotional offers, as our rider count is consistently larger throughout the day. Promotions like discounted rides can make our rider count skyrocket as there is already a lot of interest.
  - Bike riders are more frequently registered users compared to casual, but trials for registered-user features during evening rides can influence our registered user count for the evening composition.
 4. **Policy and Ethics Advisor:**
- - Create safety protocols and features to alert users of winds above 30, as peak hours are dangerous in cities.
+ - Create safety protocols and features to alert users of winds above 30 mph, as peak hours are dangerous in cities.
 
 <a name="ethics-and-biases"></a>
 ## <ins>Ethics and Biases </ins>
