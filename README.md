@@ -43,15 +43,15 @@
 
 # :broom: <ins>Data Cleaning and Processing<ins/> </br>
 
-- Used the .info() method to ensure all columns had no **missing values**,
-- Changed the **data type** of the "dteday" column to datetime
-- **Feature engineered** new column "not_norm_windspeeds" by denormalizing "windspeed" column, making windspeed more legible for future safety recommendations.
+- Used the `.info()` method to ensure all columns had no **missing values**,
+- Changed the **data type** of the `"dteday"` column to datetime
+- **Feature engineered** new column `"not_norm_windspeeds"` by denormalizing `"windspeed"` column, making windspeed more legible for future safety recommendations.
 
 <img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
 
 ## Filtering the Data
 
-I chose to subset the data using the "workingday" column where "workingday" is equal to 1. </br>
+I chose to subset the data using the `"workingday"` column where `"workingday"` is equal to 1. </br>
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
