@@ -61,14 +61,17 @@ To further support this decision, I performed a Welches' T-Test to find if there
 
 ```
 # Do average hourly rides differ between working days and non-working days?
+
 # H 0 : Average hourly working day rides do not differ from average hourly non-working day rides.
 # H 1 : Average hourly working day rides differ from average hourly non-working day rides.
-alpha = 0.05
-#filtering to get rides for both non-working and workingdays
-workingday = df[df['workingday'] == 1]
-notworkingday = df[df['workingday'] == 0]
+
+  alpha = 0.05
+  workingday = df[df['workingday'] == 1]
+  notworkingday = df[df['workingday'] == 0]
+
 # pinguoin ttest
-ping = pg.ttest(x=workingday['cnt'],y=notworkingday['cnt'],confidence=1-alpha)
+  ping = pg.ttest(x=workingday['cnt'],y=notworkingday['cnt'],confidence=1-alpha)
+
 # BOTH TESTS SAY THERE IS A SIGNIFICANT DIFFERENCE 
 # BETWEEN THE RIDER AVERAGES OF WORKING DAYS AND NOT WORKING DAYS
 ```
