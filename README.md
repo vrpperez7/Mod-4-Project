@@ -192,7 +192,6 @@ Tailoring the findings of our analysis to each stakeholder,
 
 ### REPO NAVIGATION
 ```
-|[Bike Share Analysis](#bike-share-analysis)
 |--data/
 |-----hour.csv
 |--figures/
@@ -209,3 +208,4 @@ Tailoring the findings of our analysis to each stakeholder,
 |--.gitignore
 |--README.md
 ```
+|[back to top](#bike-share-analysis)
