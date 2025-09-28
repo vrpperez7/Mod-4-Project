@@ -169,20 +169,39 @@ Recommendations:
 
 # <ins> Final Recommendations </ins>
 Tailoring the findings of our analysis to our stakeholders,
-1. Park General Manager
-- Demand is strongest during our evening peak hours of 17 and 18, as we receive more bike riders.
-- 
-2. Operations Lead
-- Best time for maintenance are between the hours of 23-5 as our user count is low compared to other hours. 
-- Mean riders of less than 10 during hours of 2-4, perfect for preparing for peak hours.
-3. Marketing Lead
-- Summertime is the best time for promotional offers, as our rider count is consistantly larger throughout the day. Promotions like discounted rides can make our biker count skyrocket as there is already a lot of interest.
-- Bike riders are more frequently registered users compared to casual, but trials for registered features during evening rides can influence our registered user count for the evening composition.
-4. Policy and Ethics Advisor:
-- Create safety protocols and features to alarm users of winds above 30, as peak hours are dangerous in cities.
+1. **Park General Manager:**
+ - Demand is strongest during our evening peak hours of 17 and 18, as we receive more bike riders.
+ - It is worth hypothesis testing during the winter seasons, as impact would not be as consequential but enough riders to understand the effect.
+2. **Operations Lead:**
+ - Best time for maintenance are between the hours of 23-5 as our user count is low compared to other hours. 
+ - Mean riders of less than 10 during hours of 2-4, perfect for preparing for peak hours.
+3. **Marketing Lead:**
+ - Summertime is the best time for promotional offers, as our rider count is consistantly larger throughout the day. Promotions like discounted rides can make our biker count skyrocket as there is already a lot of interest.
+ - Bike riders are more frequently registered users compared to casual, but trials for registered features during evening rides can influence our registered user count for the evening composition.
+4. **Policy and Ethics Advisor:**
+ - Create safety protocols and features to alarm users of winds above 30, as peak hours are dangerous in cities.
 
 ## <ins>Ethics and Biases </ins>
 ### Data Biases
-- Some dates resulted in less than 24 hours due to weather conditions.
-- Unable to identify location based influences as our data did not include location.
-- Pricing of service or registry was not included in data.
+ - Some dates resulted in less than 24 hours due to weather conditions.
+ - Unable to identify location based influences as our data did not include location.
+ - Pricing of service or registry was not included in data.
+
+### REPO NAVIGATION
+```
+|--data/
+|-----hour.csv
+|--figures/
+|------eveninghist.png
+|------eveningpie.png
+|------eveningseasonality.png
+|------linegraph.png
+|------morninghist.png
+|------morningpie.png
+|------morningseasonality.png
+|--notebooks/
+|------EDA.ipynb
+|------statisticaltest.ipynb
+|--.gitignore/
+|--README.md
+```
