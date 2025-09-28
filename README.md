@@ -14,12 +14,12 @@
 
 # :thinking: <ins>Business Problem:</ins>
 
-### The characteristics of bike share data make it interesting for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
-### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked us to extract insights from hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
+### The characteristics of bike share data make it valuable for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
+### I work as a data analyst on the BikeShare Product Team. Our stakeholders have asked us to extract insights from hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
 
 ## The stakeholders are:
 
-### <ins>Primary Stakeholder's interests:</ins>
+### <ins>Primary Stakeholders' interests:</ins>
 ***The Park General Manager*** would like to know:
 - When demand is strong or fragile.
 - User behavior patterns.
@@ -55,9 +55,9 @@ I chose to subset the data using the `"workingday"` column where `"workingday"` 
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where the bulk of the data lies, focuses on stronger demand, and highlights potentially profitable hours. </br>
+This means the subset represents weekdays (Monday through Friday) excluding holidays. I chose this sample because it's where the bulk of the data lies, focuses on periods of stronger demand and highlights potentially profitable hours. </br>
 
-To further support this decision, I performed a Welch's T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
+To support this decision further, I performed a Welch's T-Test to determine if there was a statistically significant difference between the means when `"workingday"` is true versus false. </br>
 
 ```
 # Do average hourly rides differ between working days and non-working days?
@@ -69,7 +69,7 @@ To further support this decision, I performed a Welch's T-Test to find if there 
   workingday = df[df['workingday'] == 1]
   notworkingday = df[df['workingday'] == 0]
 
-# pinguoin ttest
+# pingouin ttest
   ping = pg.ttest(x=workingday['cnt'],y=notworkingday['cnt'],confidence=1-alpha)
 
 # BOTH TESTS SAY THERE IS A SIGNIFICANT DIFFERENCE 
@@ -100,7 +100,7 @@ These categories included
 
 I found the top two hours fell within the morning (7 and 8) and evening (17 and 18) peaks. </br>
 
-Our line graph also answers the **Operations Lead's** question, as it highlights the best maintenance hours. These fell between the hours 23-5, and they have a grouped average count of bike riders less than 81 rides an hour. </br>
+Our line graph also answers the **Operations Lead's** question, as it highlights the best maintenance hours. These fell between the hours 23:00 and 5:00, and they have a grouped average count of bike riders less than 81 rides an hour. </br>
 
 I decided to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
@@ -119,13 +119,13 @@ To guide marketing decisions, I decided to analyze seasonal trends between morni
 ![bar chart for evening peak seasons](figures/eveningseasonality.png)
 
 Insights:
-- The seasonal bar chart for peak data supports our general data line graph with evenings having more bike counts than morning
-- Summer is by far the most popular time for bike riding, making it the best season for promotional offers
+- The seasonal bar chart for peak data supports our overall data line graph, showing evenings have more bike counts than mornings.
+- Summer is by far the most popular time for bike riding, making it the best season for promotional offers.
 - Morning and evening differ in their second-best seasons: for mornings, it's fall; for evenings, it's spring.
 - Winter has the least sum of bike riders.
 
 Recommendations:
-- Create marketing opportunities during the summer season, as more riders occur during this season.
+- Create marketing opportunities during the summer season, as more ridership occurs.
 - When creating secondary marketing opportunities, focus on time of day as both times of day present different opportunities for best marketing strategies.
 
 ## User Composition
@@ -165,25 +165,25 @@ Insights:
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
 
-# :check: <ins> Final Recommendations </ins>
+# :ballot_box_with_check: <ins> Final Recommendations </ins>
 Tailoring the findings of our analysis to each stakeholder,
 1. **Park General Manager:**
- - Demand is strongest during our evening peak hours of 17 and 18, as we receive more bike riders.
+ - Demand is strongest during our evening peak hours of 17:00 and 18:00, as we receive more bike riders.
  - Winter is a good time for hypothesis testing, the impact is lower, but still has enough rider data to observe real effects.
 2. **Operations Lead:**
- - Best time for maintenance are between the hours of 23-5 as our user count is low compared to other hours. 
- - Mean riders of less than 10 during hours of 2-4, perfect for preparing for peak hours.
+ - Best times for maintenance are between the hours of 23:00 and 5:00 as our user count is low compared to other hours. 
+ - The mean rider count is less than 10 during hours of 2:00 and 4:00, ideal for preparing for peak hours.
 3. **Marketing Lead:**
  - Summertime is the best time for promotional offers, as our rider count is consistently larger throughout the day. Promotions like discounted rides can make our rider count skyrocket as there is already a lot of interest.
- - Bike riders are more frequently registered users compared to casual, but trials for registered features during evening rides can influence our registered user count for the evening composition.
+ - Bike riders are more frequently registered users compared to casual, but trials for registered-user features during evening rides can influence our registered user count for the evening composition.
 4. **Policy and Ethics Advisor:**
  - Create safety protocols and features to alert users of winds above 30, as peak hours are dangerous in cities.
 
 ## <ins>Ethics and Biases </ins>
 ### Data Biases
  - Some dates resulted in less than 24 hours due to weather conditions.
- - Unable to identify location based influences as our data did not include location.
- - Pricing of service or registration was not included in data.
+ - Unable to identify location-based influences as our data did not include location information.
+ - Pricing of service or registration was not included in the data.
 
 ### REPO NAVIGATION
 ```
@@ -200,6 +200,6 @@ Tailoring the findings of our analysis to each stakeholder,
 |--notebooks/
 |------EDA.ipynb
 |------statisticaltest.ipynb
-|--.gitignore/
+|--.gitignore
 |--README.md
 ```
