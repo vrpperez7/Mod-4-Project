@@ -12,7 +12,7 @@
 
 ![image](https://github.com/user-attachments/assets/2daef8b4-6de6-4dd8-8d54-07fc3221c934)
 
-# :thinking: <ins>Business Problem:</ins>
+# :thinking: <ins> Business Problem </ins>
 
 ### The characteristics of bike share data make it valuable for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
 ### I work as a data analyst on the BikeShare Product Team. Our stakeholders have asked us to extract insights from hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
