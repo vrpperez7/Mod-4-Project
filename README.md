@@ -208,4 +208,4 @@ Tailoring the findings of our analysis to each stakeholder,
 |--.gitignore
 |--README.md
 ```
-|[back to top](#bike-share-analysis)
+[back to the top](#bike-share-analysis)
