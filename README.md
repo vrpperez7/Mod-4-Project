@@ -59,7 +59,19 @@ This means the subset represents Monday through Friday without holidays. I chose
 
 To further support this decision, I performed a Welches' T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
 
-<img width="662" height="340" alt="Screenshot 2025-09-28 at 1 01 43 AM" src="https://github.com/user-attachments/assets/be22b0ff-284c-4748-8979-8f7f74db387e" />
+```
+# Do average hourly rides differ between working days and non-working days?
+# H 0 : Average hourly working day rides do not differ from average hourly non-working day rides.
+# H 1 : Average hourly working day rides differ from average hourly non-working day rides.
+alpha = 0.05
+#filtering to get rides for both non-working and workingdays
+workingday = df[df['workingday'] == 1]
+notworkingday = df[df['workingday'] == 0]
+# pinguoin ttest
+ping = pg.ttest(x=workingday['cnt'],y=notworkingday['cnt'],confidence=1-alpha)
+# BOTH TESTS SAY THERE IS A SIGNIFICANT DIFFERENCE 
+# BETWEEN THE RIDER AVERAGES OF WORKING DAYS AND NOT WORKING DAYS
+```
 
 Our **p-value** was calculated at 0.000042, concluding a *statistical significance* between the means of average hourly working-day rides to not working-day rides. </br>
 
