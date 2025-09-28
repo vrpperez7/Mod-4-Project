@@ -167,3 +167,5 @@ Insights:
 
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
+
+# <ins> Final Recommendations <ins/>
