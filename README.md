@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-- [Business Problem & Stakeholders](#business-problem)
+- [Business Problem & Stakeholders](#:thinking:-<ins>-Business-Problem-</ins>)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Insights and Recommendations](#insights-and-recommendations)
 - [Final Recommendations](#final-recommendations)
