@@ -68,6 +68,7 @@ Our Alternative Hypothesis: Average hourly working day rides differ from average
 With **alpha** = 0.05, <//br>
 Our **p-value** was calculated at 0.000042, concluding a <ins>statistical significance<ins> between the means of average hourly working-day rides to not working-day rides. </br>
 
+<img width="662" height="340" alt="Screenshot 2025-09-28 at 1 01 43 AM" src="https://github.com/user-attachments/assets/be22b0ff-284c-4748-8979-8f7f74db387e" />
 
 I was able to reject the Null Hypothesis with a power of 98% justifying the difference in means is not only substantial, but a **real finding**.
 
