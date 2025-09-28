@@ -41,7 +41,7 @@
 ## So we start the analysis asking the question: 
 # How can we best ensure the safety, efficiency, and profitability for our bikes?
 
-### <ins>Data Cleaning and Processing<ins> </br>
+## <ins>Data Cleaning and Processing<ins> </br>
 
 - Used the .info() method to ensure all columns had no **missing values**,
 - Changed the **data type** for "dteday" column to datetime
@@ -49,36 +49,52 @@
 
 <img width="403" height="332" alt="Screenshot 2025-09-22 at 4 23 35 PM" src="https://github.com/user-attachments/assets/2b9eec26-e3ba-498f-a119-b8a557468d77" />
 
+## Filtering the Data
+
 I chose to subset the data to work with "workingday" column where "workingday" is equal to 1. </br>
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lies, focusing on stronger demand, and highlights potential profitable hours.
+This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lies, focusing on stronger demand, and highlights potential profitable hours. </br>
 
-### <ins>Exploratory Data Analysis<ins>
+To further support this decision, I performed a Welches' T-Test to find if </br>
 
-I plotted our data on a line graph to find trends in the hourly usage of bikes:</br>
+Our Null Hypothesis: Average hourly working day rides do not differ from average hourly non-working day rides.
+
+Could be rejected to support </br>
+
+Our Alternative Hypothesis: Average hourly working day rides differ from average hourly non-working day rides. </br>
+
+With **alpha** = 0.05, <//br>
+Our **p-value** was calculated at 0.000042, concluding a <ins>statistical significance<ins> between the means of average hourly working-day rides to not working-day rides. </br>
+
+
+I was able to reject the Null Hypothesis with a power of 98% justifying the difference in means is not only substantial, but a **real finding**.
+
+## <ins>Exploratory Data Analysis<ins>
+
+To visualize the mean of working-days, I plotted the data on a line graph and found trends in the hourly usage of bikes:</br>
 
 ![line graph](figures/linegraph.png)
 
-After plotting, I noticed our data presented a bimodal distribution. This means there are two distinct peaks, indicating our bike rides occur more frequently.</br>
+I noticed our data presented a bimodal distribution. This means there are two distinct peaks, indicating our bike rides occur more frequently during specific time periods.</br>
 
-I did more **feature engineering** to pinpoint these hours. </br>
+I did more **feature engineering** to pinpoint the time periods. </br>
 
-Grouping all hours and creating a "timebin" column, I was able to categorize the means of all hours. </br>
+The feature consisted of grouping hours and creating a "timebin" column. Using this column, I was able to categorize the means of the hours in a day. </br>
 These categories included
-- Peak Hours: all mean hours on or above the 80th quantile (275)
-- Not Peak: mean hours less than 275 and above 100
-- Maintenance: anything below 100
+- Peak Hours: all hours with a mean on or above the 80th quantile (275)
+- Not Peak: hours with a mean less than 275 and above 100
+- Maintenance: any mean below 100
 
 <img width="193" height="489" alt="Screenshot 2025-09-26 at 3 29 07 PM" src="https://github.com/user-attachments/assets/36ccbaf0-757a-43af-baab-1dcb120d3279" />
 
-and found the top two hours for morning and evening were:
+I found the top two hours fell within:
 
-This means morning hours are 7 and 8, </br>
-Evening hours are 17 and 18. </br>
+the morning hours of 7 and 8, </br>
+the evening hours are 17 and 18. </br>
 
-Our line graph also answers our **Operations Lead's** question as the best maintenance hours are between hours 23-5, as they have a grouped average count of bike riders less than 81 rides an hour. </br>
+Our line graph also answers our **Operations Lead's** as it highlights the best maintenance hours. These fell between the hours 23-5, as they have a grouped average count of bike riders less than 81 rides an hour. </br>
 
 I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
