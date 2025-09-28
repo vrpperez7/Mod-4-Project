@@ -1,5 +1,5 @@
-<a name="bike-share-analysis"></a>
 # :bike: Bike Share Analysis
+<a name="bike-share-analysis"></a>
 ### by [Vincent Perez](https://www.linkedin.com/in/thevinceperez/)
 
 ## Table of Contents
