@@ -41,7 +41,7 @@
 ## So we start the analysis asking the question: 
 # How can we best ensure the safety, efficiency, and profitability of our bikes?
 
-# :broom: <ins>Data Cleaning and Processing<ins/> </br>
+# :broom: <ins>Data Cleaning and Processing</ins>
 
 - Used the `.info()` method to ensure all columns had no **missing values**,
 - Changed the **data type** of the `"dteday"` column to datetime
@@ -55,9 +55,9 @@ I chose to subset the data using the `"workingday"` column where `"workingday"` 
 
 <img width="284" height="300" alt="image" src="https://github.com/user-attachments/assets/2473d94d-1d0d-43bd-8737-cb3b18c4e58d" />
 
-This means the subset represents Monday through Friday without holidays. I chose this sample because it's where the bulk of the data lies, focusing on stronger demand, and highlights potential profitable hours. </br>
+This means the subset represents Monday through Friday without holidays. I chose this sample because it's where the bulk of the data lies, focuses on stronger demand, and highlights potentially profitable hours. </br>
 
-To further support this decision, I performed a Welchs' T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
+To further support this decision, I performed a Welch's T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
 
 ```
 # Do average hourly rides differ between working days and non-working days?
@@ -98,19 +98,17 @@ These categories included
 
 <img width="193" height="489" alt="Screenshot 2025-09-26 at 3 29 07 PM" src="https://github.com/user-attachments/assets/36ccbaf0-757a-43af-baab-1dcb120d3279" />
 
-I found the top two hours fell within:
+I found the top two hours fell within the morning (7 and 8) and evening (17 and 18) peaks. </br>
 
-the morning hours of 7 and 8, and the evening hours are 17 and 18. </br>
+Our line graph also answers the **Operations Lead's** question, as it highlights the best maintenance hours. These fell between the hours 23-5, and they have a grouped average count of bike riders less than 81 rides an hour. </br>
 
-Our line graph also answers our **Operations Lead's** as it highlights the best maintenance hours. These fell between the hours 23-5, as they have a grouped average count of bike riders less than 81 rides an hour. </br>
-
-I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
+I decided to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
 # :bulb: <ins>Insights and Recommendations<ins/>
 
 ## Seasonality
 
-To guide marketing decisions, I decided to analyze seasonal trends between morning and evening hours by comparing each season's total number of bike riders. </br>
+To guide marketing decisions, I decided to analyze seasonal trends between morning and evening hours by comparing the total number of bike riders each season. </br>
 
 ### Morning Peak Seasonal Totals:
 
@@ -123,7 +121,7 @@ To guide marketing decisions, I decided to analyze seasonal trends between morni
 Insights:
 - The seasonal bar chart for peak data supports our general data line graph with evenings having more bike counts than morning
 - Summer is by far the most popular time for bike riding, making it the best season for promotional offers
-- Morning and Evening differ in their second-best seasons: for mornings, its fall; for evenings, it's spring.
+- Morning and evening differ in their second-best seasons: for mornings, it's fall; for evenings, it's spring.
 - Winter has the least sum of bike riders.
 
 Recommendations:
@@ -147,10 +145,10 @@ Insights:
 - Evening has a larger percentile of casual users
 
 Recommendations:
-- Although the number of registered users is large, there is still an opportunity to leverage our understanding of casual users, as we know evening hours compose of more casual users.
+- Although the number of registered users is large, there is still an opportunity to leverage our understanding of casual users, as we know evening hours are composed of more casual users.
 
 ## Safety Concern
-Knowing that ride frequency is highest during peak hours, I examined wind speeds during those times and compared them to ride counts to see if there's a potential safety-related concerns.
+Knowing that ride frequency is highest during peak hours, I examined wind speeds during those times and compared them to ride counts to see if there are any potential safety-related concerns.
 
 ### Morning Histogram: </br>
 
@@ -162,30 +160,30 @@ Knowing that ride frequency is highest during peak hours, I examined wind speeds
 
 Insights:
 - Most bike riders occur when windspeeds are between 0-20.
-- Wind speeds can exceed above 30 in both the morning and evening, potentially indicating dangerous conditions suchh as debris, reduced control, or discomfort.
+- Wind speeds can exceed 30 in both the morning and evening, potentially indicating dangerous conditions such as debris, reduced control, or discomfort.
 
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
 
-# <ins> Final Recommendations </ins>
-Tailoring the findings of our analysis to our stakeholders,
+# :check: <ins> Final Recommendations </ins>
+Tailoring the findings of our analysis to each stakeholder,
 1. **Park General Manager:**
  - Demand is strongest during our evening peak hours of 17 and 18, as we receive more bike riders.
- - It is worth hypothesis testing during the winter seasons, as impact would not be as consequential but enough riders to understand the effect.
+ - Winter is a good time for hypothesis testing, the impact is lower, but still has enough rider data to observe real effects.
 2. **Operations Lead:**
  - Best time for maintenance are between the hours of 23-5 as our user count is low compared to other hours. 
  - Mean riders of less than 10 during hours of 2-4, perfect for preparing for peak hours.
 3. **Marketing Lead:**
- - Summertime is the best time for promotional offers, as our rider count is consistantly larger throughout the day. Promotions like discounted rides can make our biker count skyrocket as there is already a lot of interest.
+ - Summertime is the best time for promotional offers, as our rider count is consistently larger throughout the day. Promotions like discounted rides can make our rider count skyrocket as there is already a lot of interest.
  - Bike riders are more frequently registered users compared to casual, but trials for registered features during evening rides can influence our registered user count for the evening composition.
 4. **Policy and Ethics Advisor:**
- - Create safety protocols and features to alarm users of winds above 30, as peak hours are dangerous in cities.
+ - Create safety protocols and features to alert users of winds above 30, as peak hours are dangerous in cities.
 
 ## <ins>Ethics and Biases </ins>
 ### Data Biases
  - Some dates resulted in less than 24 hours due to weather conditions.
  - Unable to identify location based influences as our data did not include location.
- - Pricing of service or registry was not included in data.
+ - Pricing of service or registration was not included in data.
 
 ### REPO NAVIGATION
 ```
