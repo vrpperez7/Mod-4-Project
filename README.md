@@ -57,18 +57,11 @@ I chose to subset the data to work with "workingday" column where "workingday" i
 
 This means the subset represents Monday through Friday without holidays. I chose this sample because it's where bulk of our data lies, focusing on stronger demand, and highlights potential profitable hours. </br>
 
-To further support this decision, I performed a Welches' T-Test to find if </br>
-
-Our Null Hypothesis: Average hourly working day rides do not differ from average hourly non-working day rides.
-
-Could be rejected to support </br>
-
-Our Alternative Hypothesis: Average hourly working day rides differ from average hourly non-working day rides. </br>
-
-With **alpha** = 0.05, <//br>
-Our **p-value** was calculated at 0.000042, concluding a <ins>statistical significance<ins> between the means of average hourly working-day rides to not working-day rides. </br>
+To further support this decision, I performed a Welches' T-Test to find if there was a statistically significant difference between the means of workingday being true and workingday being false. </br>
 
 <img width="662" height="340" alt="Screenshot 2025-09-28 at 1 01 43 AM" src="https://github.com/user-attachments/assets/be22b0ff-284c-4748-8979-8f7f74db387e" />
+
+Our **p-value** was calculated at 0.000042, concluding a *statistical significance* between the means of average hourly working-day rides to not working-day rides. </br>
 
 I was able to reject the Null Hypothesis with a power of 98% justifying the difference in means is not only substantial, but a **real finding**.
 
