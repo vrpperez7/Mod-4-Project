@@ -1,4 +1,4 @@
-# Bike Share Analysis
+# :bike: Bike Share Analysis
 ### by [Vincent Perez](https://www.linkedin.com/in/thevinceperez/)
 
 ## Table of Contents
@@ -12,7 +12,7 @@
 
 ![image](https://github.com/user-attachments/assets/2daef8b4-6de6-4dd8-8d54-07fc3221c934)
 
-# Business Problem:
+# :thinking: Business Problem:
 
 ### The characteristics of bike share data make it interesting for research. Unlike buses or subways, bike sharing systems record the duration of each trip, as well as the departure and arrival locations. This ability turns them into a network that can be used to sense and study mobility in cities.
 ### I’m a data analyst on the BikeShare Product Team. Our stakeholders have asked me to extract insights from the hourly usage data. They’re looking for a general overview of the business and recommendations on how to best support the company.
@@ -41,7 +41,7 @@
 ## So we start the analysis asking the question: 
 # How can we best ensure the safety, efficiency, and profitability for our bikes?
 
-## <ins>Data Cleaning and Processing<ins> </br>
+## :broom: <ins>Data Cleaning and Processing<ins> </br>
 
 - Used the .info() method to ensure all columns had no **missing values**,
 - Changed the **data type** for "dteday" column to datetime
@@ -92,7 +92,7 @@ Our line graph also answers our **Operations Lead's** as it highlights the best 
 
 I decide to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
-# Insights and Recommendations
+# :bulb: Insights and Recommendations
 
 ## Seasonality
 
