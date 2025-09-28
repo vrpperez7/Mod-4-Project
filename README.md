@@ -6,7 +6,7 @@
 - [Business Problem & Stakeholders](#business-problem)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Insights and Recommendations](#insights-and-recommendations)
-- [Final Recommendations](#final-recommendations-for-next-quarter)
+- [Final Recommendations](#final-recommendations)
 - [Ethics and Biases](#ethics-and-biases)
 - [Repo Navigation](#repo-navigation)
 
