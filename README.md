@@ -105,6 +105,7 @@ Our line graph also answers the **Operations Lead's** question, as it highlights
 
 I decided to further analyze our morning and peak hours to answer more stakeholder questions and provide recommendations.
 
+<a name="insights-and-recommendations"></a>
 # :bulb: <ins>Insights and Recommendations<ins/>
 
 ## Seasonality
@@ -166,6 +167,7 @@ Insights:
 Recommendations:
 - Develop a feature that alerts users when wind speeds exceed 30, helping prevent rides in unsafe conditions.
 
+<a name="final-recommendations"></a>
 # :ballot_box_with_check: <ins> Final Recommendations </ins>
 Tailoring the findings of our analysis to each stakeholder,
 1. **Park General Manager:**
@@ -180,6 +182,7 @@ Tailoring the findings of our analysis to each stakeholder,
 4. **Policy and Ethics Advisor:**
  - Create safety protocols and features to alert users of winds above 30, as peak hours are dangerous in cities.
 
+<a name="ethics-and-biases"></a>
 ## <ins>Ethics and Biases </ins>
 ### Data Biases
  - Some dates resulted in less than 24 hours due to weather conditions.
