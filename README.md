@@ -1,3 +1,4 @@
+<a name="bike-share-analysis"></a>
 # :bike: Bike Share Analysis
 ### by [Vincent Perez](https://www.linkedin.com/in/thevinceperez/)
 
@@ -191,6 +192,7 @@ Tailoring the findings of our analysis to each stakeholder,
 
 ### REPO NAVIGATION
 ```
+|[Bike Share Analysis](#bike-share-analysis)
 |--data/
 |-----hour.csv
 |--figures/
