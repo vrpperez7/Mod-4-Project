@@ -189,6 +189,7 @@ Tailoring the findings of our analysis to each stakeholder,
  - Some dates resulted in less than 24 hours due to weather conditions.
  - Unable to identify location-based influences as our data did not include location information.
  - Pricing of service or registration was not included in the data.
+ - Data only represents a two year window from 2011-2012, could be irrelevant for current recommendations.
 
 ### REPO NAVIGATION
 ```
